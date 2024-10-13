@@ -1,0 +1,44 @@
+$primary-color: #3498db;
+$hover-color: darken($primary-color, 10%);
+$padding: 10px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0; /* Elimina márgenes de html y body */
+  }
+
+.navbar {
+    background-color: $primary-color;
+    height: 86px; /* Altura deseada */
+    display: flex; /* Utiliza Flexbox */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 0 10px; /* Usa padding horizontal para el espaciado */
+    justify-content: center;
+    
+  
+    .nav-links {
+      display: flex; /* Asegúrate de que nav-links también use flex */
+      list-style: none;
+      padding: 0;
+      margin-left: auto; /* Opcional: empuja el menú a la derecha */
+  
+      li {
+        margin-right: 20px;
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
