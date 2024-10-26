@@ -1,17 +1,69 @@
+@use '../../../base/variables' as v;
+@use '../../../base/mixin' as m;
 
-h1{
-    font-size: 2rem;
+h1 {
+    font-size: 6rem;
     text-align: center;
 }
-p{
+
+.entrada {
+    display: grid;
+  
+    grid-template-columns: repeat(2,1fr); 
+    gap: 10rem;
+    margin: 3rem;
+    justify-content: center;
    
+
+   img{
+    align-items: center;
+    width: 500px;
+  
+    
+   }
+    
+    @include m.tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    img{
+        width: 350px;
+    }
+   }
+
+}
+
+.parrafos {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 15px;   
+    font-size: 20px;
     text-align: center;
 }
-.img-center{
 
-display: flex;
-justify-content: center;
+
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin-bottom: 2rem;
+}
+
+.btn {
+    margin-top: 40px;
+    padding: 1rem;
+    background-color: #408846;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    
+}
+
+.btn:hover {
+    
+    color: v.$colorHover ;
+    cursor: pointer;
 }

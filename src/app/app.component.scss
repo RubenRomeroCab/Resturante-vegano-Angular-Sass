@@ -1,4 +1,5 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 1000
-
-
+.main-content {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; /* Ajusta esto según sea necesario */
+}
