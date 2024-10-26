@@ -4,12 +4,13 @@
 p {
   text-align: center;
   font-size: 60px;
-  color: v.$colortext;
+  color: black;
   font-family: v.$fuente_principal;
 }
 
 h3,
 h1 {
+  color: black;
   margin-bottom: 20px; /* Agregar espacio entre el título y el resto */
   font-size: 3rem;
   text-align: center;
@@ -60,7 +61,7 @@ img {
 .btn {
   margin-top: 40px;
   padding: 1rem;
-  background-color: rgb(69, 155, 112);
+  background-color:v.$colorbtn;
   text-decoration: none;
   color: white;
   width: 300px;
